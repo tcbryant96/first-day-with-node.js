@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import Nav from "./components/Nav";
+
+import React, {useState} from 'react';
+import ToDoCard from './components/ToDoCard'
+
+
+
+function App(props) {
+// const [to_do, setToDo] = useState([]);
+//     // function handleToDoClick(e){
+//     //   const ToDo = e.target.ToDoInput.value;
+//     //   let newTODO = [...to_do,ToDo ]
+//     //   setToDo(newTODO)
+//     }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+<>
+<Nav/>
+<div>
+<ToDoCard/>
+</div>
+
+
+
+
+
+</>
   );
 }
 
